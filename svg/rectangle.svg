@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1366px" height="550px" viewBox="0 0 1366 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>1A337E13-6823-4ECD-ACF7-C3B02591932F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="41.8942354%" x2="0%" y2="58.1057646%" id="linearGradient-1">
+            <stop stop-color="#001E7E" offset="0%"></stop>
+            <stop stop-color="#3B55F7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="JOBGEAR" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Main-page-design" fill="url(#linearGradient-1)">
+            <rect id="Rectangle" style="mix-blend-mode: soft-light;" x="0" y="0" width="1366" height="550"></rect>
+        </g>
+    </g>
+</svg>

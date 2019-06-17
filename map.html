@@ -1,0 +1,1821 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE5T4hxQcqm4k-tz1C4sK2xqWAnhTxrFc" type="text/javascript"></script>
+
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<svg style="display: none">
+		<symbol id="star" viewBox="0 0 15 14">
+			<g id="JOBGEAR" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="Main-page-design" transform="translate(-1015.000000, -17.000000)" fill="currentColor" fill-rule="nonzero">
+					<path d="M1022.5,28.7458496 L1019.29963,30.431044 C1018.81095,30.6883628 1018.2062,30.5008097 1017.94888,30.0121324 C1017.84621,29.8171443 1017.81082,29.5937018 1017.84821,29.3765293 L1018.46196,25.8120397 L1015.87027,23.2890575 C1015.47454,22.9038137 1015.46603,22.2707058 1015.85128,21.8749715 C1016.00499,21.7170688 1016.20656,21.6143635 1016.42466,21.5828168 L1020.00435,21.0650355 L1021.60298,17.8205524 C1021.84708,17.3251398 1022.44657,17.1214107 1022.94198,17.3655108 C1023.13966,17.4629096 1023.29962,17.6228768 1023.39702,17.8205524 L1024.99565,21.0650355 L1028.57534,21.5828168 C1029.12193,21.6618788 1029.50094,22.1690752 1029.42188,22.7156716 C1029.39034,22.9337702 1029.28763,23.1353406 1029.12973,23.2890575 L1026.53804,25.8120397 L1027.15179,29.3765293 C1027.2455,29.9208049 1026.88025,30.4379985 1026.33598,30.5317137 C1026.1188,30.5691071 1025.89536,30.5337173 1025.70037,30.431044 L1022.5,28.7458496 Z" id="Star"></path>
+				</g>
+			</g>
+		</symbol>
+		<symbol id="star2" viewBox="0 0 15 16">
+			<g id="JOBGEAR" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="Style-guide-page-1" transform="translate(-154.000000, -2226.000000)" fill-rule="nonzero" stroke="currentColor">
+					<path d="M161.5,2238.74585 L158.299627,2240.43104 C157.810949,2240.68836 157.2062,2240.50081 156.948881,2240.01213 C156.846208,2239.81714 156.810818,2239.5937 156.848212,2239.37653 L157.461957,2235.81204 L154.870272,2233.28906 C154.474538,2232.90381 154.466034,2232.27071 154.851278,2231.87497 C155.004994,2231.71707 155.206565,2231.61436 155.424663,2231.58282 L159.004352,2231.06504 L160.602976,2227.82055 C160.847076,2227.32514 161.44657,2227.12141 161.941982,2227.36551 C162.139658,2227.46291 162.299625,2227.62288 162.397024,2227.82055 L163.995648,2231.06504 L167.575337,2231.58282 C168.121933,2231.66188 168.500945,2232.16908 168.421882,2232.71567 C168.390336,2232.93377 168.287631,2233.13534 168.129728,2233.28906 L165.538043,2235.81204 L166.151788,2239.37653 C166.245503,2239.9208 165.880252,2240.438 165.335976,2240.53171 C165.118804,2240.56911 164.895361,2240.53372 164.700373,2240.43104 L161.5,2238.74585 Z" id="Star-Copy-2"></path>
+				</g>
+			</g>
+		</symbol>
+		<symbol id="arrow" viewBox="0 0 10 6">
+			<g id="JOBGEAR" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="Style-guide-page-1" transform="translate(-479.000000, -2187.000000)" fill-rule="nonzero" stroke="currentColor" stroke-width="1.5">
+					<polyline id="Path-2" points="480 2188 484 2192 488 2188"></polyline>
+				</g>
+			</g>
+		</symbol>
+		<symbol id="fb" viewBox="0 0 8 14">
+			<path fill="currentColor" fill-rule="nonzero" d="M2.365 14V7.614H0V5.126h2.365V3.288C2.365 1.158 3.797 0 5.887 0 6.888 0 7.749.067 8 .097v2.226H6.548c-1.134 0-1.355.496-1.355 1.217v1.588h2.71L7.55 7.622H5.193V14H2.365z"/>
+		</symbol>
+		<symbol id="pn" viewBox="0 0 11 14">
+			<path fill="currentColor" fill-rule="nonzero" d="M2.36 13.531c-.095-1.16-.085-1.99.03-2.49.157-.679 1.01-4.314 1.01-4.314s-.258-.522-.258-1.29c0-1.205.695-2.108 1.558-2.108.735 0 1.09.556 1.09 1.222 0 .745-.469 1.86-.712 2.891-.205.864.43 1.568 1.275 1.568 1.528 0 2.707-1.626 2.707-3.974 0-2.072-1.482-3.526-3.598-3.526-2.45 0-3.886 1.855-3.886 3.765 0 .748.283 1.552.639 1.985.07.087.08.163.06.25-.064.272-.21.869-.24.987-.037.163-.123.197-.287.12C.674 8.117 0 6.532 0 5.252 0 2.517 1.974 0 5.69 0 8.677 0 11 2.149 11 5.014c0 2.994-1.873 5.404-4.478 5.404-.872 0-1.69-.456-1.981-.999l-.538 2.063c-.193.757-.721 1.703-1.076 2.278-.237.384-.426.307-.566-.229z"/>
+		</symbol>
+		<symbol id="tw" viewBox="0 0 14 12">
+			<path fill="currentColor" fill-rule="nonzero" d="M13.973 1.429a5.6 5.6 0 0 1-1.648.477A3.027 3.027 0 0 0 13.586.23c-.554.341-1.17.59-1.824.728A2.792 2.792 0 0 0 9.668 0c-1.585 0-2.87 1.355-2.87 3.025 0 .24.026.47.074.691C4.486 3.597 2.372 2.39.957.563a3.09 3.09 0 0 0-.389 1.522c0 1.052.508 1.977 1.276 2.52a2.749 2.749 0 0 1-1.3-.379v.038c0 1.467.988 2.69 2.303 2.97a2.773 2.773 0 0 1-1.29.051c.367 1.202 1.425 2.078 2.685 2.102A5.57 5.57 0 0 1 0 10.641 7.86 7.86 0 0 0 4.408 12c5.281 0 8.166-4.611 8.166-8.604 0-.128 0-.258-.009-.387A5.98 5.98 0 0 0 14 1.44l-.027-.012z"/>
+		</symbol>
+		<symbol id="yt" viewBox="0 0 15 11">
+			<path fill="currentColor" fill-rule="nonzero" d="M14.687 1.699A1.929 1.929 0 0 0 13.38.329C12.212 0 7.507 0 7.507 0S2.813-.007 1.632.329a1.929 1.929 0 0 0-1.305 1.37A21.482 21.482 0 0 0 0 5.507 21.482 21.482 0 0 0 .327 9.3a1.929 1.929 0 0 0 1.305 1.37C2.8 11 7.507 11 7.507 11s4.693 0 5.874-.33a1.929 1.929 0 0 0 1.306-1.37c.216-1.25.32-2.521.312-3.793a21.484 21.484 0 0 0-.312-3.808zM6.005 7.863v-4.72L9.92 5.508 6.005 7.863z"/>
+		</symbol>
+		<symbol id="briefcase" viewBox="0 0 17 14">
+			<g fill="currentColor" fill-rule="evenodd">
+				<path fill-rule="nonzero" d="M15.553 2.115h-3.535v-.698c0-.77-.634-1.395-1.414-1.395H6.363c-.78 0-1.414.626-1.414 1.395v.698H1.414C.634 2.115 0 2.741 0 3.511v2.093C0 6.374.634 7 1.414 7H7.07v-.349c0-.193.158-.349.353-.349h2.12c.196 0 .354.156.354.35V7h5.656c.78 0 1.414-.626 1.414-1.396V3.511c0-.77-.634-1.396-1.414-1.396zm-4.949 0H6.363v-.698h4.241v.698z"/>
+				<path d="M16.77 7.376a.358.358 0 0 0-.37.035 1.408 1.408 0 0 1-.847.287H9.897v1.047a.351.351 0 0 1-.353.348H7.423a.351.351 0 0 1-.353-.348V7.698H1.414c-.303 0-.596-.1-.847-.287A.355.355 0 0 0 0 7.689v4.894c0 .77.634 1.395 1.414 1.395h14.139c.78 0 1.414-.626 1.414-1.395V7.689a.349.349 0 0 0-.196-.313z"/>
+			</g>
+		</symbol>
+		<symbol id="in" viewBox="0 0 15 15">
+			<path fill="currentColor" fill-rule="nonzero" d="M13.864 0H1.106C.496 0 0 .48 0 1.073v12.823c0 .593.495 1.073 1.106 1.073h12.758c.61 0 1.105-.48 1.105-1.073V1.073C14.97.48 14.475 0 13.864 0zM4.538 12.53H2.277V5.772h2.261v6.758zM3.408 4.85h-.016c-.758 0-1.25-.52-1.25-1.169 0-.662.506-1.167 1.28-1.167.773 0 1.25.505 1.264 1.167 0 .65-.49 1.169-1.278 1.169zm9.283 7.681h-2.26V8.914c0-.908-.328-1.528-1.146-1.528-.626 0-.997.418-1.16.822-.06.144-.075.346-.075.547v3.775H5.79s.029-6.124 0-6.758h2.26v.958c.3-.46.836-1.117 2.037-1.117 1.488 0 2.604.965 2.604 3.042v3.875zM8.054 6.804c.011-.018.027-.04.042-.061v.061h-.042z"/>
+		</symbol>
+		<symbol id="fb2" viewBox="0 0 15 15">
+			<path fill="currentColor" fill-rule="nonzero" d="M12.972 0H2.02A2.02 2.02 0 0 0 0 2.02v10.952a2.02 2.02 0 0 0 2.02 2.02h5.402l.009-5.357H6.039a.328.328 0 0 1-.328-.327L5.704 7.58c0-.182.146-.33.328-.33h1.39V5.582c0-1.936 1.182-2.99 2.91-2.99h1.417c.182 0 .329.147.329.328v1.456a.328.328 0 0 1-.329.329h-.87c-.939 0-1.12.446-1.12 1.102V7.25h2.063c.197 0 .35.172.326.367l-.204 1.727a.328.328 0 0 1-.326.29h-1.85l-.01 5.357h3.214a2.02 2.02 0 0 0 2.02-2.02V2.02A2.02 2.02 0 0 0 12.972 0z"/>
+		</symbol>
+		<symbol id="navigation" viewBox="0 0 15 15">
+			<path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" d="M13.074 1.344L.978 5.87a.383.383 0 0 0 .061.735l5.103.995c.424.083.752.42.822.847l.771 4.693a.383.383 0 0 0 .729.095L13.558 1.86a.383.383 0 0 0-.484-.516z"/>
+		</symbol>
+		<symbol id="map-i" viewBox="0 0 15 15">
+			<path fill="currentColor" fill-rule="nonzero" d="M7.573 0C3.497 0 .18 3.293.18 7.342a7.12 7.12 0 0 0 .647 2.996c1.848 4.017 5.391 8.258 6.433 9.461a.413.413 0 0 0 .624 0c1.042-1.203 4.585-5.444 6.434-9.46.429-.933.646-1.941.646-2.997C14.965 3.293 11.65 0 7.573 0zm0 11.155c-2.117 0-3.84-1.71-3.84-3.814 0-2.102 1.723-3.813 3.84-3.813s3.84 1.71 3.84 3.813-1.723 3.814-3.84 3.814z"/>
+		</symbol>
+		<symbol id="sorting1" viewBox="0 0 20 15">
+			<g fill="currentColor" fill-rule="evenodd">
+				<rect width="20" height="3" rx="1.5"/>
+				<rect width="20" height="3" y="6" rx="1.5"/>
+				<rect width="20" height="3" y="12" rx="1.5"/>
+			</g>
+		</symbol>
+		<symbol id="sorting2" viewBox="0 0 20 15">
+			<g fill="currentColor" fill-rule="evenodd">
+				<rect width="9" height="3" rx="1.5"/>
+				<rect width="9" height="3" y="6" rx="1.5"/>
+				<rect width="9" height="3" y="12" rx="1.5"/>
+				<rect width="9" height="3" x="11" rx="1.5"/>
+				<rect width="9" height="3" x="11" y="6" rx="1.5"/>
+				<rect width="9" height="3" x="11" y="12" rx="1.5"/>
+			</g>
+		</symbol>
+		<symbol id="close" viewBox="0 0 23 23">
+			<path fill="none" fill-rule="nonzero" stroke="currentColor" stroke-linecap="square" stroke-width="3.125" d="M11.706 11.706L2 21.413l9.706-9.707 9.707 9.707-9.707-9.707zm0 0L21.413 2l-9.707 9.706L2 2l9.706 9.706z"/>
+		</symbol>
+		<symbol id="plus" viewBox="0 0 19 19">
+			<g fill="currentColor" fill-rule="nonzero">
+				<path d="M0 8.867h19v1.267H0z"/>
+				<path d="M10.133 0v19H8.866V0z"/>
+			</g>
+		</symbol>
+		<symbol id="minus" viewBox="0 0 9 3">
+			<path fill="currentColor" fill-rule="nonzero" d="M0 .867h19v1.267H0z"/>
+		</symbol>
+		<symbol id="check" viewBox="0 0 12 9">
+			<path fill="currentColor" fill-rule="evenodd" d="M11.856 1.399l-7.381 7.54a.164.164 0 0 1-.236 0L.05 4.657a.172.172 0 0 1 0-.24l1.018-1.04a.164.164 0 0 1 .235 0l3.055 3.121 6.245-6.38a.164.164 0 0 1 .235 0l1.019 1.04a.172.172 0 0 1 0 .24z"/>
+		</symbol>
+		<symbol id="m" viewBox="0 0 15 15">
+			<path fill="currentColor" fill-rule="nonzero" d="M0 0h15v15H0V0zm3.58 5.017V9.47a.513.513 0 0 1-.137.443l-1.058 1.283v.17h3.001v-.17L4.328 9.913a.531.531 0 0 1-.146-.443V5.62l2.634 5.747h.306l2.263-5.747v4.58c0 .123 0 .146-.08.226l-.814.79v.17h3.952v-.17l-.786-.771a.235.235 0 0 1-.09-.226V4.551a.235.235 0 0 1 .09-.226l.805-.771v-.17H9.677L7.69 8.338 5.433 3.385H2.512v.169l.94 1.133a.39.39 0 0 1 .128.33z"/>
+		</symbol>
+		<symbol id="instagram" viewBox="0 0 15 15">
+			<g fill="currentColor" fill-rule="nonzero">
+				<path d="M10.313 0H4.686A4.688 4.688 0 0 0 0 4.688v5.625C0 12.9 2.1 15 4.688 15h5.625C12.9 15 15 12.9 15 10.312V4.689C15 2.099 12.9 0 10.312 0zm3.28 10.313a3.285 3.285 0 0 1-3.28 3.28H4.686a3.285 3.285 0 0 1-3.28-3.28V4.686a3.285 3.285 0 0 1 3.28-3.28h5.625a3.285 3.285 0 0 1 3.282 3.28v5.625z"/>
+				<path d="M7.5 3.75a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm0 6.094A2.347 2.347 0 0 1 5.156 7.5 2.346 2.346 0 0 1 7.5 5.156 2.346 2.346 0 0 1 9.844 7.5 2.347 2.347 0 0 1 7.5 9.844z"/>
+				<circle cx="11.531" cy="3.469" r="1"/>
+			</g>
+		</symbol>
+		<symbol id="direction" viewBox="0 0 17 17">
+			<path fill="currentColor" fill-rule="nonzero" d="M16.745 7.923L9.095.288a.823.823 0 0 0-1.19 0L.255 7.923a.819.819 0 0 0 0 1.187l7.65 7.635c.34.34.85.34 1.19 0l7.65-7.635a.819.819 0 0 0 0-1.187zM10.2 10.637v-2.12H6.8v2.545H5.1V7.668c0-.509.34-.848.85-.848h4.25V4.7l2.975 2.968-2.975 2.97z"/>
+		</symbol>
+		<symbol id="hide" viewBox="0 0 14 14">
+			<g fill="currentColor" fill-rule="evenodd">
+				<path d="M0 1.113l2.866 2.864L1.71 5.073h3.357V1.701l-1.101 1.16L1.095 0zM0 11.96l2.866-2.864L1.709 8h3.357v3.372l-1.101-1.16-2.87 2.861zM13.066 1.113L10.2 3.977l1.157 1.096H8V1.701l1.101 1.16L11.971 0zM13.066 11.96L10.2 9.096 11.357 8H8v3.372l1.101-1.16 2.87 2.861z"/>
+			</g>
+		</symbol>
+	</svg>
+
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<nav class="navbar navbar-expand-lg">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+							<img src="svg/menu.svg" alt="" class="open">
+							<img src="svg/close.svg" alt="" class="close">
+						</button>
+						<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+							<ul class="navbar-nav">
+								<li><a href="#" rel="dofollow">For Employers</a></li>
+								<li><a href="#" rel="dofollow">For Recruiters</a></li>
+								<li><a href="#" rel="dofollow">Post a job for free</a></li>
+								<li class="mob"><a href="#">Jobs Wiki</a></li>
+								<li class="mob"><a href="#">Feedback</a></li>
+								<li class="mob"><a href="#">Desktop version</a></li>
+							</ul>
+
+							<ul class="header__soc">
+								<li><a href="#"><svg><use xlink:href="#in"></use></svg></a></li>
+								<li><a href="#"><svg><use xlink:href="#fb2"></use></svg></a></li>
+								<li><a href="#"><svg><use xlink:href="#tw"></use></svg></a></a></li>
+							</ul>
+						</div>
+
+						<div class="header__right">
+							<div class="header__favorites">
+								<a href="favorites.html" class="favorites__quantity favorites__quantity_add favorites__quantity_add_mob" rel="nofollow">
+									<svg class="star"><use xlink:href="#star"></use></svg>
+								</a>
+								<span class="favorites__quantity favorites__quantity_add">
+									<a href="favorites.html" rel="nofollow"><svg class="star"><use xlink:href="#star"></use></svg></a>
+									<a href="favorites.html" rel="nofollow">Favourites (10)</a>
+									<svg class="arrow js-favorites"><use xlink:href="#arrow"></use></svg>
+								</span>
+
+								<div class="favorites__list">
+									<div class="nav nav-tabs" id="nav-tab" role="tablist">
+										<a class="nav-item nav-link active" id="favorites-job-tab" data-toggle="tab" href="#favorites-job" role="tab" aria-controls="favorites-job" aria-selected="true">Favourite jobs (15)</a>
+										<a class="nav-item nav-link" id="favorites-companies-tab" data-toggle="tab" href="#favorites-companies" role="tab" aria-controls="favorites-companies" aria-selected="false">Favourite companies (3)</a>
+									</div>
+									<div class="tab-content" id="nav-tabContent">
+										<div class="tab-pane fade show active" id="favorites-job" role="tabpanel" aria-labelledby="favorites-job-tab">
+											<div class="favorites__list-inner boxscroll">
+												<a href="#" class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<span class="favorites__list-vacancy">Web Designer & Shopify UI Designer</span>
+													<span class="favorites__list-follow">Added: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</a>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+											</div>
+											<div class="button-inner">
+												<a href="#" class="button button-primary">View all</a>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="favorites-companies" role="tabpanel" aria-labelledby="favorites-companies-tab">
+											<div class="favorites__list-inner boxscroll">
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+												<div class="favorites__list-item">
+													<div class="favorites__list-info">
+														<span class="favorites__list-firm">Invision App</span>
+														<span class="favorites__list-country">In England, London</span>
+													</div>
+													<a href="#" class="favorites__list-vacancy">Web Designer & Shopify UI Designer</a>
+													<span class="favorites__list-follow">Followed: 12 September</span>
+													<svg class="star"><use xlink:href="#star"></use></svg>
+												</div>
+											</div>
+											<div class="button-inner">
+												<a href="#" class="button button-primary">View all</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="header__cv">Upload or Create CV</a>
+							<a href="#" class="header__enter">Sign In</a>
+							<span class="header__btn-search"><img src="svg/search.svg" alt=""></span>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<div class="menu_mob">
+				<div class="header__search">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-5 col-lg-3 col-xl-3">
+
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+								<div class="search">
+									<div class="search__item search__item_vacancy">
+										<input type="search" placeholder="Job title, skills or company" class="js-input-vacancy">
+										<svg class="icon"><use xlink:href="#briefcase"></use></svg>
+										<span class="clear"><svg><use xlink:href="#close"></use></svg></span>
+									</div>
+									<div class="search__item search__item_navigation">
+										<input type="search" placeholder="City, post code or region">
+										<svg class="icon"><use xlink:href="#navigation"></use></svg>
+										<span class="clear"><svg><use xlink:href="#close"></use></svg></span>
+									</div>
+									<button type="button" class="button button-search" alt="Find jobs in UK now"><img src="svg/search.svg" alt=""><span>Search now</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="filter filter_mob">
+					<div class="filter__inner">
+						<div class="filter__options">
+							<span class="filter__options-title">Filter Options</span>
+							<span class="filter__options-clear"><svg><use xlink:href="#close"></use></svg> Clear All (1)</span>
+						</div>
+
+						<div class="filter__item active">
+							<div class="filter__item-title js-filter-title">
+								<span class="filter__item-name">Salary<span class="number">4</span> </span>
+								<span class="filter__item-index">
+												<svg class="plus"><use xlink:href="#plus"></use></svg>
+												<svg class="minus"><use xlink:href="#minus"></use></svg>
+											</span>
+							</div>
+							<div class="filter__item-list">
+								<div class="filter__item-list-title">
+									<span class="filter__item-list-option">Rate options:</span>
+									<span class="filter__item-list-sort">Per year <svg><use xlink:href="#arrow"></use></svg></span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">At least £10,000</span>
+									<span class="quantity">(312,400)</span>
+								</div>
+								<div class="filter__item-list-category active">
+									<span class="close"><svg><use xlink:href="#close"></use></svg></span>
+									<span class="name">At least £15,000</span>
+									<span class="quantity">(212,003)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">At least £20,000</span>
+									<span class="quantity">(202,312)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">At least £25,000</span>
+									<span class="quantity">(101,495)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">At least £30,000</span>
+									<span class="quantity">(51,499)</span>
+								</div>
+
+								<div class="filter__item-list-category disclosure">
+									<span class="name">At least £15,000</span>
+									<span class="quantity">(212,003)</span>
+								</div>
+								<div class="filter__item-list-category disclosure">
+									<span class="name">At least £20,000</span>
+									<span class="quantity">(202,312)</span>
+								</div>
+								<div class="filter__item-list-category disclosure">
+									<span class="name">At least £25,000</span>
+									<span class="quantity">(101,495)</span>
+								</div>
+								<div class="filter__item-list-category disclosure">
+									<span class="name">At least £30,000</span>
+									<span class="quantity">(51,499)</span>
+								</div>
+								<span class="filter__item-list-more js-more">Show more <svg><use xlink:href="#arrow"></use></svg></span>
+							</div>
+						</div>
+						<div class="filter__item">
+							<div class="filter__item-title js-filter-title">
+								<span class="filter__item-name">Location</span>
+								<span class="filter__item-index">
+												<svg class="plus"><use xlink:href="#plus"></use></svg>
+												<svg class="minus"><use xlink:href="#minus"></use></svg>
+											</span>
+							</div>
+
+							<div class="filter__item-inner">
+								<div class="filter__item-section js-dropdown">
+												<span class="filter__item-sect js-click-dropdown">
+													England <svg class="plus"><use xlink:href="#arrow"></use></svg>
+												</span>
+
+									<div class="filter__item-section js-dropdown">
+													<span class="filter__item-sect js-click-dropdown">
+														East Midlands <svg class="plus"><use xlink:href="#arrow"></use></svg>
+													</span>
+
+										<div class="filter__item-section js-dropdown">
+														<span class="filter__item-sect js-click-dropdown">
+															London <svg class="plus"><use xlink:href="#arrow"></use></svg>
+														</span>
+											<div class="filter__item-list js-dropdown">
+												<div class="filter__item-list-category">
+													<span class="name">Barking and Dagenham</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category active">
+													<span class="name">Bexley</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Greenwich</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Hackney</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Havering</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Lewisham</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category active">
+													<span class="close"><svg><use xlink:href="#close"></use></svg></span>
+													<span class="name">Newham</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Redbridge</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Tower Hamlets</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+
+												<div class="filter__item-list-category disclosure">
+													<span class="name">Barking and Dagenham</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category disclosure">
+													<span class="name">Bexley</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category disclosure">
+													<span class="name">Greenwich</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<span class="filter__item-list-more js-more">Show more <svg><use xlink:href="#arrow"></use></svg></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item-section js-dropdown">
+												<span class="filter__item-sect js-click-dropdown">
+													England <svg class="plus"><use xlink:href="#arrow"></use></svg>
+												</span>
+
+									<div class="filter__item-section js-dropdown">
+													<span class="filter__item-sect js-click-dropdown">
+														East Midlands <svg class="plus"><use xlink:href="#arrow"></use></svg>
+													</span>
+
+										<div class="filter__item-section js-dropdown">
+														<span class="filter__item-sect js-click-dropdown">
+															London <svg class="plus"><use xlink:href="#arrow"></use></svg>
+														</span>
+											<div class="filter__item-list js-dropdown">
+												<div class="filter__item-list-category">
+													<span class="name">Barking and Dagenham</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category active">
+													<span class="name">Bexley</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Greenwich</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Hackney</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Havering</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Lewisham</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category active">
+													<span class="close"><svg><use xlink:href="#close"></use></svg></span>
+													<span class="name">Newham</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Redbridge</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Tower Hamlets</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+
+												<div class="filter__item-list-category disclosure">
+													<span class="name">Barking and Dagenham</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category disclosure">
+													<span class="name">Bexley</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category disclosure">
+													<span class="name">Greenwich</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<span class="filter__item-list-more js-more">Show more <svg><use xlink:href="#arrow"></use></svg></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item-section js-dropdown">
+												<span class="filter__item-sect js-click-dropdown">
+													England <svg class="plus"><use xlink:href="#arrow"></use></svg>
+												</span>
+
+									<div class="filter__item-section js-dropdown">
+													<span class="filter__item-sect js-click-dropdown">
+														East Midlands <svg class="plus"><use xlink:href="#arrow"></use></svg>
+													</span>
+
+										<div class="filter__item-section js-dropdown">
+														<span class="filter__item-sect js-click-dropdown">
+															London <svg class="plus"><use xlink:href="#arrow"></use></svg>
+														</span>
+											<div class="filter__item-list">
+												<div class="filter__item-list-category">
+													<span class="name">Barking and Dagenham</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category active">
+													<span class="name">Bexley</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Greenwich</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Hackney</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Havering</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Lewisham</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category active">
+													<span class="close"><svg><use xlink:href="#close"></use></svg></span>
+													<span class="name">Newham</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Redbridge</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category">
+													<span class="name">Tower Hamlets</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+
+												<div class="filter__item-list-category disclosure">
+													<span class="name">Barking and Dagenham</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<div class="filter__item-list-category disclosure">
+													<span class="name">Bexley</span>
+													<span class="quantity">(154,400)</span>
+												</div>
+												<div class="filter__item-list-category disclosure">
+													<span class="name">Greenwich</span>
+													<span class="quantity">(222,400)</span>
+												</div>
+												<span class="filter__item-list-more js-more">Show more <svg><use xlink:href="#arrow"></use></svg></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter__item">
+							<div class="filter__item-title js-filter-title">
+								<span class="filter__item-name">Sector</span>
+								<span class="filter__item-index">
+												<svg class="plus"><use xlink:href="#plus"></use></svg>
+												<svg class="minus"><use xlink:href="#minus"></use></svg>
+											</span>
+							</div>
+
+							<div class="filter__item-list">
+								<div class="filter__item-list-category">
+									<span class="name">Accountancy (Qualified) jobs</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Accountancy jobs</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Actuarial jobs</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Admin, Secretarial & PA jobs</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Agricultural & Landscaping jobs</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Apprenticeships jobs</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+								<div class="filter__item-list-category active">
+									<span class="close"><svg><use xlink:href="#close"></use></svg></span>
+									<span class="name">Banking jobs</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Charity & Voluntary jobs</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Construction & Property jobs</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Customer Service jobs</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Energy jobs</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+							</div>
+						</div>
+						<div class="filter__item">
+							<div class="filter__item-title js-filter-title">
+								<span class="filter__item-name">Job type</span>
+								<span class="filter__item-index">
+									<svg class="plus"><use xlink:href="#plus"></use></svg>
+									<svg class="minus"><use xlink:href="#minus"></use></svg>
+								</span>
+							</div>
+
+							<div class="filter__item-list">
+								<div class="filter__item-list-category">
+									<span class="name">Job type one</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category active">
+									<span class="check"><svg><use xlink:href="#check"></use></svg></span>
+									<span class="name">Job type two</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+								<div class="filter__item-list-category active">
+									<span class="check"><svg><use xlink:href="#check"></use></svg></span>
+									<span class="name">Job type three</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Job type four</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Job type five</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+							</div>
+						</div>
+						<div class="filter__item">
+							<div class="filter__item-title js-filter-title">
+								<span class="filter__item-name">Working hours</span>
+								<span class="filter__item-index">
+												<svg class="plus"><use xlink:href="#plus"></use></svg>
+												<svg class="minus"><use xlink:href="#minus"></use></svg>
+											</span>
+							</div>
+							<div class="filter__item-list">
+								<div class="filter__item-list-category">
+									<span class="name">Morning</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category active">
+									<span class="check"><svg><use xlink:href="#check"></use></svg></span>
+									<span class="name">Daytime</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Evening</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Night</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Saturday</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+								<div class="filter__item-list-category">
+									<span class="name">Weekend</span>
+									<span class="quantity">(154,400)</span>
+								</div>
+								<div class="filter__item-list-category active">
+									<span class="check"><svg><use xlink:href="#check"></use></svg></span>
+									<span class="name">Flexible</span>
+									<span class="quantity">(222,400)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="button-group">
+						<button type="button" class="button button-rose w-100">Search now</button>
+					</div>
+				</div>
+			</div>
+			<div class="map-main">
+				<div class="container pr-0">
+					<div class="row mr-0">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 pr-0 map-main__mob-company">
+							<div class="map-main__sorting">
+								<div class="filter__options">
+									<span class="filter__options-title">Filter Options <svg><use xlink:href="#arrow"></use></svg></span>
+									<span class="filter__options-clear"><svg><use xlink:href="#close"></use></svg> Clear All (1)</span>
+								</div>
+
+								<div class="map-main__results">
+									<span class="title">We found 594 vacancies for <a href="#">Web Designer</a> in <a href="#"> London</a> </span>
+									<span class="results">13 / 125</span>
+								</div>
+
+								<div class="filter">
+									<div class="filter__inner">
+										<div class="filter__options">
+											<span class="filter__options-title">Filter Options</span>
+											<span class="filter__options-clear"><svg><use xlink:href="#close"></use></svg> Clear All (1)</span>
+										</div>
+
+										<div class="filter__item active">
+											<div class="filter__item-title js-filter-title">
+												<span class="filter__item-name">Salary<span class="number">4</span> </span>
+												<span class="filter__item-index">
+												<svg class="plus"><use xlink:href="#plus"></use></svg>
+												<svg class="minus"><use xlink:href="#minus"></use></svg>
+											</span>
+											</div>
+											<div class="filter__item-list">
+												<div class="filter__item-list-title">
+													<span class="filter__item-list-option">Rate options:</span>
+													<span class="filter__item-list-sort">Per year <svg><use xlink:href="#arrow"></use></svg></span>
+												</div>
+												<div class="filter__item-list-category">
+													<input type="radio" id="filter-salary1" name="filter-salary" checked/>
+													<label for="filter-salary1">
+														<span class="name">At least £10,000</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+												<div class="filter__item-list-category">
+													<input type="radio" id="filter-salary2" name="filter-salary"/>
+													<label for="filter-salary2">
+														<span class="name">At least £10,000</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+												<div class="filter__item-list-category">
+													<input type="radio" id="filter-salary3" name="filter-salary"/>
+													<label for="filter-salary3">
+														<span class="name">At least £10,000</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="filter__item open">
+											<div class="filter__item-title js-filter-title">
+												<span class="filter__item-name">Location</span>
+												<span class="filter__item-index">
+												<svg class="plus"><use xlink:href="#plus"></use></svg>
+												<svg class="minus"><use xlink:href="#minus"></use></svg>
+											</span>
+											</div>
+
+											<div class="filter__item-inner">
+												<div class="filter__item-section js-dropdown open">
+												<span class="filter__item-sect js-click-dropdown">
+													England <svg class="plus"><use xlink:href="#arrow"></use></svg>
+												</span>
+
+													<div class="filter__item-section js-dropdown open">
+													<span class="filter__item-sect js-click-dropdown">
+														East Midlands <svg class="plus"><use xlink:href="#arrow"></use></svg>
+													</span>
+
+														<div class="filter__item-section js-dropdown open">
+														<span class="filter__item-sect js-click-dropdown">
+															London <svg class="plus"><use xlink:href="#arrow"></use></svg>
+														</span>
+															<div class="filter__item-list js-dropdown open">
+																<div class="filter__item-list-category">
+																	<input type="radio" id="filter-location1" name="filter-location" checked/>
+																	<label for="filter-location1">
+																		<span class="name">Barking and Dagenham</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<div class="filter__item-list-category">
+																	<input type="radio" id="filter-location2" name="filter-location"/>
+																	<label for="filter-location2">
+																		<span class="name">Bexley</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<div class="filter__item-list-category">
+																	<input type="radio" id="filter-location3" name="filter-location"/>
+																	<label for="filter-location3">
+																		<span class="name">Greenwich</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<div class="filter__item-list-category disclosure">
+																	<input type="radio" id="filter-location4" name="filter-location"/>
+																	<label for="filter-location4">
+																		<span class="name">Greenwich</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<span class="filter__item-list-more js-more">Show more <svg><use xlink:href="#arrow"></use></svg></span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter__item-section js-dropdown">
+												<span class="filter__item-sect js-click-dropdown">
+													England <svg class="plus"><use xlink:href="#arrow"></use></svg>
+												</span>
+
+													<div class="filter__item-section js-dropdown">
+													<span class="filter__item-sect js-click-dropdown">
+														East Midlands <svg class="plus"><use xlink:href="#arrow"></use></svg>
+													</span>
+
+														<div class="filter__item-section js-dropdown">
+														<span class="filter__item-sect js-click-dropdown">
+															London <svg class="plus"><use xlink:href="#arrow"></use></svg>
+														</span>
+															<div class="filter__item-list js-dropdown">
+																<div class="filter__item-list-category">
+																	<input type="radio" id="filter-location5" name="filter-location2"/>
+																	<label for="filter-location5">
+																		<span class="name">Barking and Dagenham</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<div class="filter__item-list-category">
+																	<input type="radio" id="filter-location6" name="filter-location2"/>
+																	<label for="filter-location6">
+																		<span class="name">Bexley</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<div class="filter__item-list-category">
+																	<input type="radio" id="filter-location7" name="filter-location2"/>
+																	<label for="filter-location7">
+																		<span class="name">Greenwich</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<div class="filter__item-list-category disclosure">
+																	<input type="radio" id="filter-location8" name="filter-location2"/>
+																	<label for="filter-location8">
+																		<span class="name">Greenwich</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<span class="filter__item-list-more js-more">Show more <svg><use xlink:href="#arrow"></use></svg></span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter__item-section js-dropdown">
+												<span class="filter__item-sect js-click-dropdown">
+													England <svg class="plus"><use xlink:href="#arrow"></use></svg>
+												</span>
+
+													<div class="filter__item-section js-dropdown">
+													<span class="filter__item-sect js-click-dropdown">
+														East Midlands <svg class="plus"><use xlink:href="#arrow"></use></svg>
+													</span>
+
+														<div class="filter__item-section js-dropdown">
+														<span class="filter__item-sect js-click-dropdown">
+															London <svg class="plus"><use xlink:href="#arrow"></use></svg>
+														</span>
+															<div class="filter__item-list">
+																<div class="filter__item-list-category">
+																	<input type="radio" id="filter-location9" name="filter-location3"/>
+																	<label for="filter-location9">
+																		<span class="name">Barking and Dagenham</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<div class="filter__item-list-category">
+																	<input type="radio" id="filter-location10" name="filter-location3"/>
+																	<label for="filter-location10">
+																		<span class="name">Bexley</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<div class="filter__item-list-category">
+																	<input type="radio" id="filter-location11" name="filter-location4"/>
+																	<label for="filter-location11">
+																		<span class="name">Greenwich</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<div class="filter__item-list-category disclosure">
+																	<input type="radio" id="filter-location12" name="filter-location5"/>
+																	<label for="filter-location12">
+																		<span class="name">Greenwich</span>
+																		<span class="quantity">(312,400)</span>
+																	</label>
+																</div>
+																<span class="filter__item-list-more js-more">Show more <svg><use xlink:href="#arrow"></use></svg></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="filter__item">
+											<div class="filter__item-title js-filter-title">
+												<span class="filter__item-name">Sector</span>
+												<span class="filter__item-index">
+												<svg class="plus"><use xlink:href="#plus"></use></svg>
+												<svg class="minus"><use xlink:href="#minus"></use></svg>
+											</span>
+											</div>
+
+											<div class="filter__item-list">
+												<div class="filter__item-list-category">
+													<input type="radio" id="filter-sector1" name="filter-sector"/>
+													<label for="filter-sector1">
+														<span class="name">Accountancy (Qualified) jobs</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+												<div class="filter__item-list-category">
+													<input type="radio" id="filter-sector2" name="filter-sector"/>
+													<label for="filter-sector2">
+														<span class="name">Accountancy jobs</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+												<div class="filter__item-list-category">
+													<input type="radio" id="filter-sector3" name="filter-sector"/>
+													<label for="filter-sector3">
+														<span class="name">Actuarial jobs</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="filter__item">
+											<div class="filter__item-title js-filter-title">
+												<span class="filter__item-name">Job type</span>
+												<span class="filter__item-index">
+												<svg class="plus"><use xlink:href="#plus"></use></svg>
+												<svg class="minus"><use xlink:href="#minus"></use></svg>
+											</span>
+											</div>
+
+											<div class="filter__item-list">
+												<div class="filter__item-list-category">
+													<input type="checkbox" id="filter-type1" name="filter-type" checked/>
+													<label for="filter-type1">
+														<span class="name">Job type one</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+												<div class="filter__item-list-category">
+													<input type="checkbox" id="filter-type2" name="filter-type"/>
+													<label for="filter-type2">
+														<span class="name">Job type two</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+												<div class="filter__item-list-category">
+													<input type="checkbox" id="filter-type3" name="filter-type"/>
+													<label for="filter-type3">
+														<span class="name">Job type three</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="filter__item">
+											<div class="filter__item-title js-filter-title">
+												<span class="filter__item-name">Working hours</span>
+												<span class="filter__item-index">
+												<svg class="plus"><use xlink:href="#plus"></use></svg>
+												<svg class="minus"><use xlink:href="#minus"></use></svg>
+											</span>
+											</div>
+											<div class="filter__item-list">
+												<div class="filter__item-list-category">
+													<input type="checkbox" id="filter-hours1" name="filter-hours" checked/>
+													<label for="filter-hours1">
+														<span class="name">Morning</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+												<div class="filter__item-list-category">
+													<input type="checkbox" id="filter-hours2" name="filter-hours" checked/>
+													<label for="filter-hours2">
+														<span class="name">Daytime</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+												<div class="filter__item-list-category">
+													<input type="checkbox" id="filter-hours3" name="filter-hours"/>
+													<label for="filter-hours3">
+														<span class="name">Evening</span>
+														<span class="quantity">(312,400)</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="catalog__vacancy catalog__vacancy_job map-main__list boxscroll">
+									<div class="catalog__map-main">
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+									</div>
+									<div class="catalog__map-main">
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+									</div>
+									<div class="catalog__map-main">
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+									</div>
+									<div class="catalog__map-main">
+										<div class="catalog__vacancy-item">
+											<a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+											<a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+												<div class="catalog__vacancy-info">
+													<div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+													<span class="catalog__vacancy-title">Uber</span>
+													<span class="catalog__vacancy-country">In England, London</span>
+												</div>
+												<span class="catalog__vacancy-vacancy">User Interface & User Experience Designer for full-time job job User Interface & User Experience Designer for full-time job </span>
+												<div class="catalog__vacancy-salary">
+													<span class="salary">£25,000 - £50,000 <span>per year</span></span>
+												</div>
+
+												<div class="catalog__vacancy-dop js-quick">
+													<div class="catalog__vacancy-quick">
+														<span class="text">Permanent</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Morning hours</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text">Direct Employer</span>
+													</div>
+													<div class="catalog__vacancy-quick">
+														<span class="text text-blue">Accountancy jobs</span>
+													</div>
+												</div>
+
+												<p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+												<div class="catalog__vacancy-data">
+													<span class="data">Added: 30 October</span>
+												</div>
+											</a>
+											<a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+											<span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 pr-0">
+							<div class="map-main__map">
+								<div id="map"></div>
+								<div class="map__search">
+									<div class="form__check">
+										<input type="checkbox" id="search-map" name="search">
+										<label for="search-map">Search as I move the map</label>
+									</div>
+								</div>
+								<a href="#" class="map__hide">
+									<svg><use xlink:href="#hide"></use></svg>
+									<span>Hide map</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+		<script src="js/jquery.nicescroll.min.js"></script>
+		<script src="js/slick.js"></script>
+		<script src="js/script.js"></script>
+
+		<script>
+            //map
+            $(function () {
+
+                function initMap() {
+
+                    var location = new google.maps.LatLng(51.5180861, -0.1359333);
+
+                    var center = new google.maps.LatLng(51.5180861, -0.1359333);
+
+                    var stylesMap = [
+                        {
+                            "featureType": "administrative",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#444444"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "color": "#f2f2f2"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "saturation": "-100"
+                                },
+                                {
+                                    "lightness": "57"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "lightness": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "labels",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "saturation": -100
+                                },
+                                {
+                                    "lightness": 45
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "simplified"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "labels",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "labels.text",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                },
+                                {
+                                    "color": "#484848"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station.bus",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station.bus",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "saturation": "0"
+                                },
+                                {
+                                    "lightness": "0"
+                                },
+                                {
+                                    "gamma": "1.00"
+                                },
+                                {
+                                    "weight": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station.bus",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "saturation": "-100"
+                                },
+                                {
+                                    "weight": "1"
+                                },
+                                {
+                                    "lightness": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station.rail",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station.rail",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "gamma": "1"
+                                },
+                                {
+                                    "lightness": "40"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station.rail",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "saturation": "-100"
+                                },
+                                {
+                                    "lightness": "30"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "color": "#3b55f7"
+                                },
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        }
+                    ]
+
+                    var mapCanvas = document.getElementById('map');
+                    var mapOptions = {
+                        center: center,
+                        zoom: 14,
+                        panControl: false,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        styles: stylesMap
+                    }
+
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+
+                }
+
+                google.maps.event.addDomListener(window, 'load', initMap);
+
+            });
+		</script>
+	</body>
+</html>
