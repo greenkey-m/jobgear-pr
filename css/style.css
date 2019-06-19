@@ -943,10 +943,10 @@ bottom: 86px;*/ -webkit-line-clamp: 7; } }
 .map + form { margin-top: -20px; }
 .contacts .map { height: 348px; max-height: 100%; margin-bottom: 30px; }
 @media screen and (max-width: 991px) { .contacts .map { height: 220px; order: 2; } }
-.map-main { height: calc(100vh - 110px); min-height: 700px; background: #f9f9f9; overflow: hidden; }
+.map-main { height: calc(100vh - 135px); min-height: 700px; background: #f9f9f9; overflow: hidden; }
 @media screen and (max-width: 991px) { .map-main .col-xs-12, .map-main .row, .map-main .container { padding: 0 !important; margin: 0 !important; } }
 @media screen and (max-width: 991px) { .map-main__mob-company { padding-left: 0; position: absolute; z-index: 10; bottom: 0; left: 0; } }
-.map-main__list { overflow: hidden; height: calc(100vh - 250px); min-height: 500px; padding-right: 40px; }
+.map-main__list { overflow: hidden; height: calc(100vh - 255px); min-height: 500px; padding-right: 40px; }
 @media screen and (max-width: 991px) { .map-main__list { height: auto; min-height: inherit; flex-flow: inherit; overflow-x: auto !important; display: -ms-flexbox; display: flex; }
   .map-main__list .catalog__map-main { display: contents; margin: 0 5px; }
   .map-main__list .catalog__map-main .catalog__vacancy-item { flex: 0 0 246px; max-width: 246px; } }

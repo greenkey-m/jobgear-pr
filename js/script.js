@@ -135,4 +135,5 @@ $(document).ready(function (){
     if($(window).width() < 991) {
         $(".map-main__list.boxscroll").niceScroll({ orizrailenabled:'false'});
     }
+
 });
