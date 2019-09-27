@@ -1,0 +1,62 @@
+<template>
+    <div id="catalog_vacancy" class="catalog__vacancy catalog__vacancy_job map-main__list boxscroll">
+        <div class="catalog__map-main">
+
+                <div class="catalog__vacancy-item" v-for="item in vacancies">
+                    <a href="#" class="star active" rel="nofollow"><svg><use xlink:href="#star2"></use></svg></a>
+
+                    <a href="#" class="catalog__vacancy-item-inner" rel="nofollow">
+                        <div class="catalog__vacancy-info">
+                            <div class="catalog__vacancy-img"><img src="images/logo-catalog.jpg" alt="Google small logo" class="img-fluid"></div>
+                            <span class="catalog__vacancy-title">Uber</span>
+                            <span class="catalog__vacancy-country">In England, London</span>
+                        </div>
+                        <span class="catalog__vacancy-vacancy">{{ item.caption }}</span>
+                        <div class="catalog__vacancy-salary">
+                            <span class="salary">£25,000 - £50,000 <span>per year</span></span>
+                        </div>
+
+                        <div class="catalog__vacancy-dop js-quick">
+                            <div class="catalog__vacancy-quick">
+                                <span class="text">Permanent</span>
+                            </div>
+                            <div class="catalog__vacancy-quick">
+                                <span class="text">Morning hours</span>
+                            </div>
+                            <div class="catalog__vacancy-quick">
+                                <span class="text">Direct Employer</span>
+                            </div>
+                            <div class="catalog__vacancy-quick">
+                                <span class="text text-blue">Accountancy jobs</span>
+                            </div>
+                        </div>
+
+                        <p>We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros We're on the look out for a creative, UI/UX Designer to join our talented, growing team to help develop brands and work with exciting clients acros</p>
+                        <div class="catalog__vacancy-data">
+                            <span class="data">Added: 30 October</span>
+                        </div>
+                    </a>
+                    <a href="#modal-job1" class="view desct-md" data-fancybox="job" data-index="1" data-src="#modal-job1" rel="nofollow">QUICK VIEW</a>
+                    <span class="view mob-md js-btn-view"><span class="open">QUICK VIEW</span><span class="close-b">SHOW LESS</span></span>
+                </div>
+
+        </div>
+    </div>
+
+</template>
+
+<script>
+    export default {
+        name: "CatalogVacancy",
+        props: {
+            vacancies: Array,
+        },
+        mounted() {
+            console.log(this.vacancies)
+        }
+    }
+</script>
+
+<style scoped>
+
+</style>
